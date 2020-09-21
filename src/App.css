@@ -24,8 +24,29 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bar {
+  fill: green;
+}
+
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+
+.dot{
+    fill: #000099;
+    stroke: #fff;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+svg {
+  background-color: white;
+  border: 1px solid white;
 }
 
 @keyframes App-logo-spin {
