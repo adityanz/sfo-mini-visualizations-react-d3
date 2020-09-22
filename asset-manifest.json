@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.483cada3.chunk.css",
-    "main.js": "/static/js/main.0d618fc8.chunk.js",
-    "main.js.map": "/static/js/main.0d618fc8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
-    "static/js/2.e926dfff.chunk.js": "/static/js/2.e926dfff.chunk.js",
-    "static/js/2.e926dfff.chunk.js.map": "/static/js/2.e926dfff.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.58bbfa2108db43cebd11183dc4519155.js": "/precache-manifest.58bbfa2108db43cebd11183dc4519155.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.483cada3.chunk.css.map": "/static/css/main.483cada3.chunk.css.map",
-    "static/js/2.e926dfff.chunk.js.LICENSE.txt": "/static/js/2.e926dfff.chunk.js.LICENSE.txt",
-    "static/media/bar.csv": "/static/media/bar.924f78c5.csv",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "//mini-visualization-project-adityanz/static/css/main.483cada3.chunk.css",
+    "main.js": "//mini-visualization-project-adityanz/static/js/main.9bed33de.chunk.js",
+    "main.js.map": "//mini-visualization-project-adityanz/static/js/main.9bed33de.chunk.js.map",
+    "runtime-main.js": "//mini-visualization-project-adityanz/static/js/runtime-main.cf799008.js",
+    "runtime-main.js.map": "//mini-visualization-project-adityanz/static/js/runtime-main.cf799008.js.map",
+    "static/js/2.e926dfff.chunk.js": "//mini-visualization-project-adityanz/static/js/2.e926dfff.chunk.js",
+    "static/js/2.e926dfff.chunk.js.map": "//mini-visualization-project-adityanz/static/js/2.e926dfff.chunk.js.map",
+    "index.html": "//mini-visualization-project-adityanz/index.html",
+    "precache-manifest.758caaa24c84553b34ad55b6eef5ad28.js": "//mini-visualization-project-adityanz/precache-manifest.758caaa24c84553b34ad55b6eef5ad28.js",
+    "service-worker.js": "//mini-visualization-project-adityanz/service-worker.js",
+    "static/css/main.483cada3.chunk.css.map": "//mini-visualization-project-adityanz/static/css/main.483cada3.chunk.css.map",
+    "static/js/2.e926dfff.chunk.js.LICENSE.txt": "//mini-visualization-project-adityanz/static/js/2.e926dfff.chunk.js.LICENSE.txt",
+    "static/media/bar.csv": "//mini-visualization-project-adityanz/static/media/bar.924f78c5.csv",
+    "static/media/logo.svg": "//mini-visualization-project-adityanz/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/runtime-main.cf799008.js",
     "static/js/2.e926dfff.chunk.js",
     "static/css/main.483cada3.chunk.css",
-    "static/js/main.0d618fc8.chunk.js"
+    "static/js/main.9bed33de.chunk.js"
   ]
 }
