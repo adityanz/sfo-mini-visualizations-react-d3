@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Homework 2</title>
+
+    <!-- Load Bulma from CDN (consider saving it to repository instead) -->
+    <!-- https://bulma.io/ -->
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/journal/bulmaswatch.min.css">
+
+    <!-- Load Font Awesome 5 (free) icons -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+
+  <div id="navigation">
+  </div>
+  <script>
+  $(function(){
+    $("#navigation").load("navbar.html");
+  });
+  </script>
+
+  <section class="section">
+    <div class="container">
+      <!-- Begin page content -->
+      <div class="content">
+        <h1 class="title">
+          Baseline Cross-Sectional Estimates of Child and Parent Income Distributions by College
+        </h1>
+        <p class="subtitle">
+          Using RawGraphics and D3 V5 </p>
+
+        <a class="button is-large is-primary" href="https://usf-cs360-spring2020.github.io/homework2-adityanz/chart.html">
+            <span class="icon is-medium">
+              <i class="fas fa-chart-area"></i>
+            </span>
+            <span>Parallel Coordinates Chart</span>
+          </a>
+
+          <!-- <a class="button is-large is-link" href="#">
+            <span class="icon is-medium">
+              <i class="fas fa-chart-pie"></i>
+            </span>
+            <span>Pie Chart</span>
+          </a>
+        </p> -->
+
+        <!-- https://github.com/vega/vega-embed#basic-example -->
+        <!-- <p>It is possible to embed some visualizations directly here too. Here is <a href="https://github.com/vega/vega-embed#basic-example">an example</a> using Vega-Lite:</p>
+
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.9.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.0.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.1"></script>
+
+        <div id="vis"></div>
+
+        <script type="text/javascript">
+        var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+        vegaEmbed('#vis', spec).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+        </script> -->
+
+        <!-- <h4>Instructions</h4>
+
+        <p>You will likely need to include instructions on how to interpet and use the visualization. In the case above, if you click the three dots <i class="fas fa-ellipsis-h has-text-grey-light	"></i> above it will open a menu where you can either save the visualization to a SVG or PNG, or alternatively open it up in the online Vega Editor.</p> -->
+
+        <!-- <h4>Discussion</h4> -->
+
+        <!-- <p>You may also need other sections, like a discussion section, per-visualization section on data wrangling, and others. Because of the extra content and code visualizations take, it might be worthwhile to break up your pages into one home page and then one page per visualization.</p> -->
+
+        <span class="heading">Acknowledgements</span>
+
+        <p2>
+          <a href="https://www.d3-graph-gallery.com/graph/parallel_basic.html"> Parallel Chart Basic: By  J. Carson</a><br/>
+          <a href="https://www.d3-graph-gallery.com/graph/parallel_custom.html">Parallel Chart With Color: By J. Carson</a><br/>
+          <a href="https://www.d3-graph-gallery.com/graph/custom_legend.html">Legend and Axis Idea</a><br/>
+        </p2>
+
+        <p class="is-6">
+          <em>I used all those sources in order to better understand and implement my visualizations in D3 and organize my data.</em>
+        </p>
+
+
+      </div>
+      <!-- End page content -->
+    </div>
+  </section>
+
+
+    <div id="footer">
+    </div>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+
+
+
+</html>

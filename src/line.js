@@ -1,6 +1,6 @@
 import React from 'react';
 import * as d3 from 'd3';
-import bar from './bar.csv'
+import bar from './line.csv'
 
 class BarChart extends React.Component {
   componentDidMount() {
@@ -15,20 +15,26 @@ class BarChart extends React.Component {
     const owidth = this.props.width
     const oheight = this.props.height
 
-    var margin = {top: 20, right: 20, bottom: 70, left: 60},
+    var margin = {top: 20, right: 20, bottom: 70, left: 100},
         width = owidth - margin.left - margin.right,
         height = oheight - margin.top - margin.bottom;
 
 
         d3.csv(bar).then((data) => {
           console.log(data);
+          //
+          // var xScale = d3.scaleLinear()
+          //     .range([0, width]); // output
 
+          var yScale = d3.scaleLinear()
+              .range([height, 0]); // output
+          //
           var xScale = d3.scaleBand()
               .range([0, width]) // output
               .padding(0.1)
 
-          var yScale = d3.scaleLinear()
-              .range([height, 0]); // output
+          // var yScale = d3.scaleLinear()
+          //     .range([height, 0]); // output
 
 
 var line = d3.line()
@@ -59,8 +65,8 @@ var line = d3.line()
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 1.5)
+            .attr("stroke", "darkblue")
+            .attr("stroke-width", 4)
             .attr("stroke-linejoin", "round")
             .attr("stroke-linecap", "round")
             .attr("d", line);
@@ -72,16 +78,16 @@ var line = d3.line()
                     //
                     const xtitle = svg.append('text')
                         .attr('class', 'axis-title')
-                        .text('Registered Country');
+                        .text('Year');
                     //
                     xtitle.attr('text-anchor', 'middle');
                     xtitle.attr('x', xmid);
                     xtitle.attr('y', height+40);
                     const ytitle = svg.append('text')
                       .attr('class', 'axis-title')
-                      .text('Passenger Count')
+                      .text('Domestic Passenger Count')
                       ytitle.attr('x', -210);
-                      ytitle.attr('y', -50);
+                      ytitle.attr('y', -80);
                       ytitle.attr('dy', '1.75ex');
                       ytitle.attr('text-anchor', 'middle');
                       ytitle.attr('transform', 'rotate(-90)');
