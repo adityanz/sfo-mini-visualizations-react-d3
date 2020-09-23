@@ -21,7 +21,7 @@ class App extends Component {
       <section class="hero is-primary is-bold">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">Mini Visualizations</h1>
+      <h1 class="title">SFO Passenger Data Mini Visualizations</h1>
       <h2 class="subtitle">Aditya Dixit</h2>
     </div>
   </div>
