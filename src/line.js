@@ -1,6 +1,7 @@
 import React from 'react';
 import * as d3 from 'd3';
-import bar from './line.csv'
+import dom from './domestic.csv'
+import intl from './international.csv'
 
 class BarChart extends React.Component {
   componentDidMount() {
@@ -19,17 +20,24 @@ class BarChart extends React.Component {
         width = owidth - margin.left - margin.right,
         height = oheight - margin.top - margin.bottom;
 
+    var yScale = 0;
 
-        d3.csv(bar).then((data) => {
+    var xScale = 0;
+
+    var line;
+
+    var svg;
+
+        d3.csv(dom).then((data) => {
           console.log(data);
           //
           // var xScale = d3.scaleLinear()
           //     .range([0, width]); // output
 
-          var yScale = d3.scaleLinear()
+          yScale = d3.scaleLinear()
               .range([height, 0]); // output
           //
-          var xScale = d3.scaleBand()
+          xScale = d3.scaleBand()
               .range([0, width]) // output
               .padding(0.1)
 
@@ -37,7 +45,7 @@ class BarChart extends React.Component {
           //     .range([height, 0]); // output
 
 
-var line = d3.line()
+line = d3.line()
     .x(function(d, i) { return xScale(d.year); }) // set the x values for the line generator
     .y(function(d) { return yScale(d.value); }) // set the y values for the line generator
     .curve(d3.curveMonotoneX) // apply smoothing to the line
@@ -47,7 +55,7 @@ var line = d3.line()
               xScale.domain(data.map(function(d) { return d.year; }));
               yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
 
-              const svg = d3.select("body").append("svg")
+               svg = d3.select("body").append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
@@ -92,7 +100,28 @@ var line = d3.line()
                       ytitle.attr('text-anchor', 'middle');
                       ytitle.attr('transform', 'rotate(-90)');
 
+
+  svg.append("circle").attr("cx",200-150).attr("cy",130-130).attr("r", 6).style("fill", "#000099")
+  svg.append("circle").attr("cx",200-150).attr("cy",160-130).attr("r", 6).style("fill", "#ffab00")
+  svg.append("text").attr("x", 220-150).attr("y", 130-130).text("Domestic").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("text").attr("x", 220-150).attr("y", 160-130).text("International").style("font-size", "15px").attr("alignment-baseline","middle")
+
         })
+
+
+                d3.csv(intl).then((data) => {
+                  console.log(data);
+
+                    svg.append("path")
+                    .datum(data)
+                    .attr("fill", "none")
+                    .attr("stroke", "orange")
+                    .attr("stroke-width", 4)
+                    .attr("stroke-linejoin", "round")
+                    .attr("stroke-linecap", "round")
+                    .attr("d", line);
+
+                })
 
     }
 

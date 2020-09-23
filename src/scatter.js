@@ -32,7 +32,7 @@ class BarChart extends React.Component {
 
 
               xScale.domain(data.map(function(d) { return d.year; }));
-              yScale.domain([0, d3.max(data, function(d) { return d.value; })]);
+              yScale.domain([d3.min(data, function(d) { return d.value; }), d3.max(data, function(d) { return d.value; })]);
 
               const svg = d3.select("body").append("svg")
                 .attr("width", width + margin.left + margin.right)
@@ -72,8 +72,8 @@ class BarChart extends React.Component {
                     xtitle.attr('y', height+40);
                     const ytitle = svg.append('text')
                       .attr('class', 'axis-title')
-                      .text('International Passenger Count')
-                      ytitle.attr('x', -210);
+                      .text('Monthly Passenger Count')
+                      ytitle.attr('x', -200);
                       ytitle.attr('y', -80);
                       ytitle.attr('dy', '1.75ex');
                       ytitle.attr('text-anchor', 'middle');
