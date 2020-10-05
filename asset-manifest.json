@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/mini-visualization-project-adityanz/static/css/main.483cada3.chunk.css",
-    "main.js": "/mini-visualization-project-adityanz/static/js/main.db483915.chunk.js",
-    "main.js.map": "/mini-visualization-project-adityanz/static/js/main.db483915.chunk.js.map",
-    "runtime-main.js": "/mini-visualization-project-adityanz/static/js/runtime-main.86d47c36.js",
-    "runtime-main.js.map": "/mini-visualization-project-adityanz/static/js/runtime-main.86d47c36.js.map",
-    "static/js/2.8a6f4b00.chunk.js": "/mini-visualization-project-adityanz/static/js/2.8a6f4b00.chunk.js",
-    "static/js/2.8a6f4b00.chunk.js.map": "/mini-visualization-project-adityanz/static/js/2.8a6f4b00.chunk.js.map",
-    "index.html": "/mini-visualization-project-adityanz/index.html",
-    "precache-manifest.390d18f747c3a78a517832d17fd8d6f6.js": "/mini-visualization-project-adityanz/precache-manifest.390d18f747c3a78a517832d17fd8d6f6.js",
-    "service-worker.js": "/mini-visualization-project-adityanz/service-worker.js",
-    "static/css/main.483cada3.chunk.css.map": "/mini-visualization-project-adityanz/static/css/main.483cada3.chunk.css.map",
-    "static/js/2.8a6f4b00.chunk.js.LICENSE.txt": "/mini-visualization-project-adityanz/static/js/2.8a6f4b00.chunk.js.LICENSE.txt",
-    "static/media/bar.csv": "/mini-visualization-project-adityanz/static/media/bar.ef20598e.csv",
-    "static/media/domestic.csv": "/mini-visualization-project-adityanz/static/media/domestic.2bf64e45.csv",
-    "static/media/international.csv": "/mini-visualization-project-adityanz/static/media/international.355aca74.csv",
-    "static/media/logo.svg": "/mini-visualization-project-adityanz/static/media/logo.5d5d9eef.svg",
-    "static/media/scatter.csv": "/mini-visualization-project-adityanz/static/media/scatter.369e4f17.csv"
+    "main.css": "/sfo-mini-visualizations-react-d3/static/css/main.483cada3.chunk.css",
+    "main.js": "/sfo-mini-visualizations-react-d3/static/js/main.f585ca0e.chunk.js",
+    "main.js.map": "/sfo-mini-visualizations-react-d3/static/js/main.f585ca0e.chunk.js.map",
+    "runtime-main.js": "/sfo-mini-visualizations-react-d3/static/js/runtime-main.00561766.js",
+    "runtime-main.js.map": "/sfo-mini-visualizations-react-d3/static/js/runtime-main.00561766.js.map",
+    "static/js/2.0a48c186.chunk.js": "/sfo-mini-visualizations-react-d3/static/js/2.0a48c186.chunk.js",
+    "static/js/2.0a48c186.chunk.js.map": "/sfo-mini-visualizations-react-d3/static/js/2.0a48c186.chunk.js.map",
+    "index.html": "/sfo-mini-visualizations-react-d3/index.html",
+    "precache-manifest.c70b9075f8cfc2c79d7150d5aa01f63e.js": "/sfo-mini-visualizations-react-d3/precache-manifest.c70b9075f8cfc2c79d7150d5aa01f63e.js",
+    "service-worker.js": "/sfo-mini-visualizations-react-d3/service-worker.js",
+    "static/css/main.483cada3.chunk.css.map": "/sfo-mini-visualizations-react-d3/static/css/main.483cada3.chunk.css.map",
+    "static/js/2.0a48c186.chunk.js.LICENSE.txt": "/sfo-mini-visualizations-react-d3/static/js/2.0a48c186.chunk.js.LICENSE.txt",
+    "static/media/bar.csv": "/sfo-mini-visualizations-react-d3/static/media/bar.ef20598e.csv",
+    "static/media/domestic.csv": "/sfo-mini-visualizations-react-d3/static/media/domestic.2bf64e45.csv",
+    "static/media/international.csv": "/sfo-mini-visualizations-react-d3/static/media/international.355aca74.csv",
+    "static/media/logo.svg": "/sfo-mini-visualizations-react-d3/static/media/logo.5d5d9eef.svg",
+    "static/media/scatter.csv": "/sfo-mini-visualizations-react-d3/static/media/scatter.369e4f17.csv"
   },
   "entrypoints": [
-    "static/js/runtime-main.86d47c36.js",
-    "static/js/2.8a6f4b00.chunk.js",
+    "static/js/runtime-main.00561766.js",
+    "static/js/2.0a48c186.chunk.js",
     "static/css/main.483cada3.chunk.css",
-    "static/js/main.db483915.chunk.js"
+    "static/js/main.f585ca0e.chunk.js"
   ]
 }
