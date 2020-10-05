@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://visualizing-healthcare-data.github.io/mini-visualization-project-adityanz",
+  "homepage": "https://adityanz.github.io/sfo-mini-visualizations-react-d3/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
